@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include ('../partials/head.ejs') %>
+</head>
+<body>
+    <header>
+        <%-include ('../partials/nav.ejs') %>
+    </header>
+    
+    <main>
+        <form method="POST" action="/agregar-producto">
+            <div class="form-cont">
+                <h3 class="titulo-form">Nuevo Producto</h3>
+
+                <input type="text" class="form-input" id="nombre" name="nombre" placeholder="Ingrese nombre del producto">
+                <input type="text" class="form-input" id="categoria" name="categoria" placeholder="Ingrese el id de la categoría">
+                <input type="text" class="form-input" id="descripcion" name="descripcion" placeholder="Ingrese una descripción">
+                <input type="text" class="form-input" id="precio" name="precio" placeholder="Ingrese el precio">
+                <input type="text" class="form-input" id="imagen" name="imagen" placeholder="Ingrese la ruta de la imagen">
+                
+                <button type="submit" class="btn-guardar">Guardar</button>
+            </div>
+        </form>
+    </main>
+    
+</body>
+</html>
