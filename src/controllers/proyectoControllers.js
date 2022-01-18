@@ -8,7 +8,7 @@ const renderHome = (req,res)=>{
             console.log(error)
         }
         else{
-            res.render('../views/pages/index',{
+            res.render('./pages/index',{
                 data
             })
         }
@@ -23,7 +23,7 @@ const renderZapas = (req,res) =>{
             console.log(error)
         }
         else{
-            res.render('../views/pages/categoriaZapas.ejs',{
+            res.render('./pages/categoriaZapas.ejs',{
                 data
             })
         }
@@ -36,7 +36,7 @@ const renderBermudas = (req,res) =>{
             console.log(error)
         }
         else{
-            res.render('../views/pages/categoriaBermuda.ejs',{
+            res.render('./pages/categoriaBermuda.ejs',{
                 data
             })
         }
@@ -49,7 +49,7 @@ const renderRemeras = (req,res)=>{
             console.log(error)
         }
         else{
-            res.render('../views/pages/categoriaRemeras.ejs',{
+            res.render('./pages/categoriaRemeras.ejs',{
                 data
             })
         }
@@ -57,7 +57,7 @@ const renderRemeras = (req,res)=>{
 };
 
 const renderForm = (req,res) =>{
-    res.render('../views/pages/formulario.ejs')
+    res.render('./pages/formulario.ejs')
 };
 
 const addProducto = (req,res) =>{
